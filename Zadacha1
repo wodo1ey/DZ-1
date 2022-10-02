@@ -1,0 +1,16 @@
+#include "pt4.h"
+#include <iostream>
+#include <iso646.h>
+#include <cmath> 
+using namespace std;
+
+void Solve()
+{
+    Task("TheOne10");
+    float x, y;
+    pt >> x >> y;
+    if (sqrt(x * x + y * y) <= 2 and y <= 0.5)
+        pt << true;
+    else
+        pt << false;
+}
