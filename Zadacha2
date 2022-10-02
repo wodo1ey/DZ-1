@@ -1,0 +1,21 @@
+#include "pt4.h"
+using namespace std;
+
+void Solve()
+{
+Task("TheOne21");
+int x;
+float M;
+pt » x;
+pt » M;
+switch (x)
+{
+case 1: M = M;
+case 2: M = M * 0.000001;
+case 3: M = M * 0.001;
+case 4: M = M / 0.001;
+case 5: M = M / 0.01;
+break;
+}
+pt « M;
+}
