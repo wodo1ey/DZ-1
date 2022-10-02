@@ -1,0 +1,24 @@
+#include "pt4.h"
+using namespace std;
+
+void Solve()
+{
+    Task("One43");
+    int n;
+    int x, y, z, w;
+    pt >> n;
+    x = n % 10;
+    y = (n / 10) % 10;
+    z = (n / 100) % 10;
+    w = n / 1000;
+    if (x * y * z == w)
+        pt << true;
+    else if (x * y * w == z)
+        pt << true;
+    else if (x * z * w == y)
+        pt << true;
+    else if (y * z * w == x)
+        pt << true;
+    else
+        pt << false;
+}
