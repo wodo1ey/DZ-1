@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+    setlocale(LC_ALL, "Russian");
+    float p = 3.1415;
+    float l, S;
+    cout << "Вычисление площади круга по длине окружности:" << endl;
+    cout << "Введите длину окружности -> "; cin >> l;
+    S = (l * l) / (4 * p);
+    cout << "Площадь круга " << S;
+
+}
