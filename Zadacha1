@@ -1,6 +1,7 @@
+//Даны вещественные числа x и y. Определить, принадлежит ли точка с коодинатами (x, y) заштрхованной части плоскости, обозначенной на рис. 10.
+//Считать, что точки на границе также принадлежат области. В качестве результата вывести логическое значение True или False.
+
 #include "pt4.h"
-#include <iostream>
-#include <iso646.h>
 #include <cmath> 
 using namespace std;
 
@@ -8,9 +9,9 @@ void Solve()
 {
     Task("TheOne10");
     float x, y;
+    bool answer = false;
     pt >> x >> y;
     if (sqrt(x * x + y * y) <= 2 and y <= 0.5)
-        pt << true;
-    else
-        pt << false;
+        answer = true;
+    pt << answer;
 }
